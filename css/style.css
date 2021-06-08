@@ -1,0 +1,374 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* remember to define focus styles! */
+
+:focus {
+  outline: 0;
+}
+
+body,
+html {
+  height: 100%;
+  line-height: 1;
+  color: black;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* tables still need cellspacing="0" in the markup */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* remove possible quote marks (") from <q> & <blockquote> */
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+* {
+  border: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#f598a8), to(#f6edb2));
+  background: -o-linear-gradient(left, #f598a8, #f6edb2);
+  background: linear-gradient(90deg, #f598a8, #f6edb2);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fullscreen {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+
+.fullscreen_body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20;
+}
+
+.greeting h1 {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.dataBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dataBlock_messageText {
+  width: 1000px;
+}
+
+.messageText {
+  width: 100%;
+}
+
+.form_label {
+  font-size: 20px;
+  color: #523407;
+}
+
+.dataBlock_file {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.label_photo {
+  padding: 20px;
+  color: #4b4336;
+}
+
+.file_input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.file_Button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-height: 40px;
+  border-radius: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6b3838;
+  padding: 0 20px;
+  color: blanchedalmond;
+}
+
+.form_photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.dataBlock_infAboutUser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.userData {
+  border-radius: 3px;
+  height: 25px;
+  margin: 15px;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4b4336;
+  padding: 20px;
+}
+
+.checkbox_input {
+  height: 30px;
+  width: 30px;
+}
+
+.form_button {
+  max-width: 300px;
+  min-width: 150px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px;
+          box-shadow: 3px;
+  cursor: pointer;
+}
+
+/*---------------------------------------------------МЕДИА ЗАПРОСЫ-----------------------------------------------*/
+
+@media screen and (max-width: 1920px) {
+  .dataBlock_messageText {
+    max-width: 1000px;
+    resize: vertical;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .dataBlock_messageText {
+    max-width: 800px;
+    resize: vertical;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dataBlock_messageText {
+    max-width: 600px;
+    resize: vertical;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .dataBlock_messageText {
+    max-width: 600px;
+    resize: vertical;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .dataBlock_messageText {
+    max-width: 300px;
+    resize: vertical;
+  }
+
+  .file_Button {
+    font-size: 20px;
+  }
+
+  .form_button {
+    font-size: 20px;
+  }
+
+  .label_photo {
+    font-size: 18px;
+  }
+
+  .form_photo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .dataBlock_messageText {
+    max-width: 200px;
+    resize: vertical;
+  }
+}
